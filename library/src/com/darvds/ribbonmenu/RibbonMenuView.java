@@ -22,14 +22,12 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.darvds.ribbonmenu.RibbonMenuView.SavedState;
-
 public class RibbonMenuView extends LinearLayout {
 
 	private ListView rbmListView;
 	private View rbmOutsideView;
 	
-	private iRibbonMenuCallback callback;
+	private IRibbonMenuCallback callback;
 	
 	private static ArrayList<RibbonMenuItem> menuItems;
 	
@@ -110,7 +108,7 @@ public class RibbonMenuView extends LinearLayout {
 	}
 	
 	
-	public void setMenuClickCallback(iRibbonMenuCallback callback){
+	public void setMenuClickCallback(IRibbonMenuCallback callback){
 		this.callback = callback;
 	}
 	
